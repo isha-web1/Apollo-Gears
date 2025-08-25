@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Providers from "./lib/Providers";
 
 
 
@@ -18,7 +19,9 @@ export default function RootLayout({
       <body
         className={` antialiased`}
       >
-        {children}
+        <Providers>
+          <div className="mx-auto container">{children}</div>
+        </Providers>
       </body>
     </html>
   );
