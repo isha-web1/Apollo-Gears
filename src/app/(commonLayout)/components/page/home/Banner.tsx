@@ -1,5 +1,5 @@
 "use client";
-import { Card, CardBody } from "@heroui/react";
+import { Button, Card, CardBody } from "@heroui/react";
 import BannerButton from "./BannerButton";
 import MotionCar from "./MotionCar";
 export default function Banner() {
@@ -16,7 +16,12 @@ export default function Banner() {
               Find your ideal ride for any adventure with our diverse range of
               affordable and dependable car rentals
             </h4>
-            <BannerButton />
+            <div>
+              <Button color="primary" variant="bordered">
+                Bordered
+              </Button>
+               <Button color="primary">Primary</Button>
+            </div>
           </div>
           <MotionCar />
         </div>
