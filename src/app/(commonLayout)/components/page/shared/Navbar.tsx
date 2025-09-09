@@ -9,7 +9,7 @@ import { Cog } from "lucide-react";
 import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 // import { ThemeSwitcher } from "./ThemeSwitcher";
-export default function NavBar() {
+ function NavBar() {
   const routeMap: Record<string, string> = {
     user: "/dashboard",
     admin: "/dashboard/admin",
@@ -61,3 +61,6 @@ export default function NavBar() {
     </Navbar>
   );
 }
+
+
+export default NavBar;

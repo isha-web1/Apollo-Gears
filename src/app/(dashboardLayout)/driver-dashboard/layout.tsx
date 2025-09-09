@@ -1,24 +1,21 @@
 import type { Metadata } from "next";
-import AdminLayout from "./AdminLayout";
-
-
 
 export const metadata: Metadata = {
   title: "Dashboard - Apollo Gears",
   description: "Next Level Riding Sharing Service",
 };
 
-  function AdminDashboardLayout({
+ function DriverDashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <div>
-      <AdminLayout>{children}</AdminLayout>
+      Driver Dashboard Sidebar
+      {children}
     </div>
   );
 }
 
-
-export default AdminDashboardLayout;
+export default DriverDashboardLayout;

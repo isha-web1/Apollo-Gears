@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Next level ride sharing service",
 };
 
-export default function RootLayout({
+ function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -26,3 +26,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+export default RootLayout;

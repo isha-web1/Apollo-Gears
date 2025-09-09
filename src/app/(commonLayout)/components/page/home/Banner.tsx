@@ -1,8 +1,9 @@
 "use client";
 import { Button, Card, CardBody } from "@heroui/react";
 import BannerButton from "./BannerButton";
-import MotionCar from "./MotionCar";
-export default function Banner() {
+import { MotionCar } from "./MotionCar";
+
+ function Banner() {
   return (
     <Card className="py-4 flex" shadow="none">
       <CardBody className="overflow-visible py-2 ">
@@ -29,3 +30,5 @@ export default function Banner() {
     </Card>
   );
 }
+
+export { Banner };

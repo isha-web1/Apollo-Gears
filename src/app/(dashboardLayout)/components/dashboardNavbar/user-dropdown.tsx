@@ -12,8 +12,7 @@ import {
   NavbarItem,
 } from "@heroui/react";
 
-
-export const UserDropdown = () => {
+ const UserDropdown = () => {
 //   const router = useRouter();
 //   const {user,setUser} = useAuth();
 //   const logOutUser = async () => {
@@ -65,3 +64,6 @@ export const UserDropdown = () => {
     </Dropdown>
   );
 };
+
+
+export { UserDropdown };

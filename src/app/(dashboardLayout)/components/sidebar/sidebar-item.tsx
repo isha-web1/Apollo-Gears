@@ -9,7 +9,7 @@ interface Props {
   href?: string;
 }
 
-export const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
+ const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
   const handleClick = () => {
     if (window.innerWidth < 768) {
       // setCollapsed();
@@ -35,3 +35,5 @@ export const SidebarItem = ({ icon, title, isActive, href = "" }: Props) => {
     </NextLink>
   );
 };
+
+export { SidebarItem };

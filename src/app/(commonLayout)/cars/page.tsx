@@ -1,11 +1,12 @@
 "use client"
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { useEffect, useState } from "react";
 import nexiosInstance from "@/config/nexios.config";
 import { Card, CardFooter, CardHeader, Image, Link } from "@heroui/react";
 
 const Cars = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 

@@ -11,7 +11,7 @@ interface Props {
   items: string[];
 }
 
-export const CollapseItems = ({ icon, items, title }: Props) => {
+ const CollapseItems = ({ icon, items, title }: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -50,3 +50,6 @@ export const CollapseItems = ({ icon, items, title }: Props) => {
     </div>
   );
 };
+
+
+export { CollapseItems };

@@ -1,7 +1,7 @@
 "use client";
 import { Image } from "@heroui/react";
 import { motion } from "framer-motion";
-export default function MotionCar() {
+ function MotionCar() {
   return (
     <motion.div
       initial={{ x: 50 }}
@@ -17,3 +17,5 @@ export default function MotionCar() {
     </motion.div>
   );
 }
+
+export { MotionCar };

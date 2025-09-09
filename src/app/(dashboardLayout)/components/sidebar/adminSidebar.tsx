@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 import { useSidebarContext } from "../../layout/layout-context";
 import { Sidebar } from "./modal.styles";
 
-export const AdminSidebarWrapper = () => {
+ const AdminSidebarWrapper = () => {
   const pathname = usePathname();
   const { collapsed } = useSidebarContext();
 
@@ -121,3 +121,5 @@ export const AdminSidebarWrapper = () => {
     </aside>
   );
 };
+
+export default AdminSidebarWrapper;

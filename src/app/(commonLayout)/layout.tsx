@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Next Level Riding Sharing Service",
 };
 
-export default function DashboardLayout({
+  function DashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -20,3 +20,6 @@ export default function DashboardLayout({
     </div>
   );
 }
+
+
+export default DashboardLayout;

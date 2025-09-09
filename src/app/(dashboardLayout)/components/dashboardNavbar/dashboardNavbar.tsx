@@ -9,7 +9,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-export const NavbarWrapper = ({ children }: Props) => {
+ const NavbarWrapper = ({ children }: Props) => {
   const { collapsed, setCollapsed } = useSidebarContext();
   return (
     <div className="relative flex flex-col flex-1 overflow-y-auto overflow-x-hidden ">
@@ -50,3 +50,5 @@ export const NavbarWrapper = ({ children }: Props) => {
     </div>
   );
 };
+
+export { NavbarWrapper };
