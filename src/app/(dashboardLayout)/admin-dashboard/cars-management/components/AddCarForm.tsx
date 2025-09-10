@@ -3,14 +3,13 @@
 "use client";
 import ActionSubmitButton from "@/app/(commonLayout)/components/page/shared/ActionSubmitButton";
 import { Input, Select, SelectItem } from "@heroui/react";
-import { createRef, useEffect } from "react";
+import { createRef, useActionState, useEffect } from "react";
 import { useFormState } from "react-dom";
 import { createCar } from "../action";
 
 const fuelType = [
   { label: "Hybrid", value: "Hybrid" },
   { label: "Octane", value: "Octane" },
-  { label: "Hybrid", value: "Hybrid" },
   { label: "Electric", value: "Electric" },
   { label: "Diesel", value: "Diesel" },
   { label: "Petrol", value: "Petrol" },
@@ -34,7 +33,7 @@ const brands = [
 ];
 
 const AddCarForm = ({ onClose }: any) => {
-  const [state, formAction] = useFormState(createCar, null);
+  const [state, formAction] = useActionState(createCar, null);
 
   const ref = createRef<HTMLFormElement>();
 

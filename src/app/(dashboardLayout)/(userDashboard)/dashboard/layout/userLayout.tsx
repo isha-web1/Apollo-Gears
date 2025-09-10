@@ -1,5 +1,6 @@
 "use client";
 
+
 import { NavbarWrapper } from "@/app/(dashboardLayout)/components/dashboardNavbar/dashboardNavbar";
 import { SidebarWrapper } from "@/app/(dashboardLayout)/components/sidebar/userSidebar";
 
@@ -15,7 +16,7 @@ export const UserLayout = ({ children }: Props) => {
     <section className="flex">
       <SidebarWrapper></SidebarWrapper>
         {children}
-      {/* <NavbarWrapper>{children}</NavbarWrapper> */}
+      <NavbarWrapper>{children}</NavbarWrapper>
     </section>
   );
 };
